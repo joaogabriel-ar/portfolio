@@ -1,0 +1,9 @@
+[submodule "public/BreakingBad"]
+	path = public/BreakingBad
+	url = https://github.com/jg151195/BreakingBad
+[submodule "public/WeatherAPI"]
+	path = public/WeatherAPI
+	url = https://github.com/jg151195/WeatherAPI
+[submodule "public/TestAPIMovies"]
+	path = public/TestAPIMovies
+	url = https://github.com/jg151195/TestAPIMovies

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+#link-menu {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    padding: 1em;
+    min-width: 7em;
+    transition: 0.5s;
+}
+
+#menu-nav {
+    margin-right: 1.5em;
+    text-align: center;
+}
+
+#puc-logo {
+    width: 150px;
+    height: 200px;
+    margin-top: 2em;
+}
+
+#usa-logo {
+    width: 15em;
+    height: 10em;
+}
+
+#brasil-logo {
+    width: 10em;
+    height: 10em;
+}
+
+.country {
+    margin-top: 1em;
+    padding: 1em;
+}
+
+nav {
+    min-width: 100%;
+    font-size: 1.1em;
+    background-color: black;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7em;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 1.2em;
+}
+
+#p-goals {
+    margin-top: 3em;
+}
+
+#p-formacao {
+    max-width: 20em;
+    margin-top: 0.2em;
+    text-align: justify;
+}
+
+#container-formacao {
+    text-align: center;
+}
+
+.knowledge {
+    padding: 2em;
+    width: 120px;
+    height: 120px;
+}
+
+.card {
+    margin: 5em;
+    padding: 2em;
+    min-width: 20em;
+    max-width: 30em;
+    max-height: 100em;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+
+footer {
+    min-width: 100%;
+    max-width: 110%;
+
+    max-height: 20em;
+    display: inline-flex;
+    margin-top: 20em;
+    color: white;
+    background-color: black;
+}
+
+.social-media {
+    padding-top: 0.5em;
+    margin-left: 10em;
+    width: 30%;
+    text-align: right;
+}
+
+#github {
+    width: 4em;
+    padding: 0.5em;
+}
+
+.img-icon {
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.5em;
+    transition: 0.5s;
+}
+
+.img-icon:hover {
+    width: 2em;
+    height: 2em;
+}
+
+#menu-footer {
+    width: 50%;
+}
+
+.nav-footer {
+    display: inline-flex;
+    padding: 1em;
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-footer:hover {
+    padding: 1em;
+}
+
+#copyright {
+    margin-top: 1.2em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#link-pages {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+}
+
+#form-container {
+    display: inline-flex;
+    color: white;
+    width: 100%;
+    height: 40em;
+
+}
+
+form {
+    width: 30em;
+    height: 32em;
+    padding: 4em;
+    margin-top: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #212121;
+    box-shadow: 2px 2px 15px #191919,
+        -2px -2px 15px #292929;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+        transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.input-form {
+    font-size: 1em;
+    outline: none;
+    padding: 0.7em;
+    border-radius: 0.2em;
+    border: 1px solid black;
+    width: 97%;
+    margin: 0.5em;
+}
+
+textarea {
+    outline: none;
+    margin: 0.5em;
+}
+
+#submit-button {
+    margin-top: 1em;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    border: solid 2px white;
+    overflow: hidden;
+    background: white;
+    color: white;
+}
+
+#submit-button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+#submit-button:hover span {
+    color: black;
+}
+
+#submit-button::before,
+#submit-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#submit-button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+#submit-button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+#tre-img {
+    width: 30em;
+    height: 20em;
+}
+
+#experiencias {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#container-experiencias {
+    border: solid 2px black;
+    max-width: 45%;
+}
+.exp{
+    max-width: 90%;
+}

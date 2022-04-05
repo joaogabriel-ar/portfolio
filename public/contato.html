@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Contato</title>
+</head>
+<body>
+    <nav>
+        <ul id="menu-nav">
+            <li class="nav-list"> <a id="link-menu" href="/index.html">Home</a></li>
+            <li class="nav-list"> <a id="link-menu" href="/projetos.html">Projetos</a></li>
+            <li class="nav-list"> <a id="link-menu" href="/experiencias.html">Experiências</a></li>
+            <li class="nav-list"> <a id="link-menu" href="/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div id="form-container">
+        <form action="/submit" method="post">
+            <label for="nome">Nome: </label>
+            <input class="input-form" id="name"type="text" name="nome" placeholder="Digite o nome aqui"><br>
+            <label for="email">Email: </label>
+            <input class="input-form" id="email"type="email" name="email" placeholder="Digite o email aqui"><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" cols="50" rows="10" placeholder="Como posso ajudar ?" id="mensagem"></textarea><br>
+            <button  id="submit-button" type="submit"><span>Enviar</span></button>
+        </form>
+    </div><br>
+
+    <footer>
+        <ul id="menu-footer">
+            <li class="nav-footer"> <a id="link-pages" href="/index.html">Home</a></li>
+            <li class="nav-footer"> <a id="link-pages" href="/projetos.html">Projetos</a></li>
+            <li class="nav-footer"> <a id="link-pages" href="/experiencias.html">Experiências</a></li>
+            <li class="nav-footer"> <a id="link-pages" href="/contato.html">Contato</a></li>
+        </ul>
+
+        <p id="copyright">© 2022 Copyright: JG</p>
+
+        <div class="social-media">
+            <a id="link-social-media" href="https://web.facebook.com/joaogabriel.araujorodrigues"><img class="img-icon" src="/imgs/facebook-icon.png" alt="facebook-icon"></a>
+            <a id="link-social-media" href="https://www.instagram.com/joaogabriel1511"><img class="img-icon" src="/imgs/instagram-icon.png" alt="instagram-icon"></a>
+            <a id="link-social-media" href="https://api.whatsapp.com/send?phone=5562983035041"><img class="img-icon" src="/imgs/whatsapp-icon.png" alt="whatsapp-icon"></a>
+            <a id="link-social-media" href="https://linkedin.com/in/joão-gabriel-araújo-rodrigues-856a151b9"><img class="img-icon" src="/imgs/linkedin-icon.png" alt="linkedin-icon"></a>
+            <a id="link-social-media" href="https://github.com/jg151195"><img  id="github" src="/imgs/github-icon.png" alt="github-icon"></a>
+        </div>
+        
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
