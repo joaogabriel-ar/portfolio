@@ -7,3 +7,6 @@
 [submodule "public/TestAPIMovies"]
 	path = public/TestAPIMovies
 	url = https://github.com/jg151195/TestAPIMovies
+[submodule "public/Kcal"]
+	path = public/Kcal
+	url = https://github.com/jg151195/Kcal
