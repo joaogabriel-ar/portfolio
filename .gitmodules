@@ -10,3 +10,6 @@
 [submodule "public/Kcal"]
 	path = public/Kcal
 	url = https://github.com/jg151195/Kcal
+[submodule "public/calculadora"]
+	path = public/calculadora
+	url = https://github.com/jg151195/calculadora
