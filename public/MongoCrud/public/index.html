@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>DataBase TEST</title>
+</head>
+
+<body>
+    <div id="container-form">
+        <form action="/form" method="post" id="form" onsubmit="validateInput(event)" >
+            <label for="nome"> *Nome: </label>
+            <input class="typeInput" type="text" name="nome" id="nome">
+            <p id="ErrorMessageNome"></p>
+            <label for="idade"> *Idade: </label>
+            <input class="typeInput" type="number" name="idade" id="idade">
+            <p id="ErrorMessageIdade"></p>
+            <label for="nota1">Nota 1:</label>
+            <input class="typeInput" type="number" name="nota1" id="nota1">
+            <label for="nota2">Nota 2:</label>
+            <input class="typeInput" type="number" name="nota2" id="nota2">
+            <label for="nota3">Nota 3:</label>
+            <input class="typeInput" type="number" name="nota3" id="nota3">
+            <label for="nota4">Nota 4:</label>
+            <input class="typeInput" type="number" name="nota4" id="nota4">
+            <p id="ErrorMessageNota"></p>
+            <input class="but" type="submit" value="Enviar" id="enviar">
+
+        </form>
+
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+
+            <form action="/updateForm" method="post" onsubmit="validateInputModal(event)">
+                <label for="nome"> Nome: </label>
+                <input class="typeInput" type="text" name="nome" id="nomeModal">
+                <p id="ErrorMessageNomeModal"></p>
+                <label for="idade"> Idade: </label>
+                <input class="typeInput" type="number" name="idade" id="idadeModal">
+                <p id="ErrorMessageIdadeModal"></p>
+                <label for="nota1">Nota 1:</label>
+                <input class="typeInput" type="number" name="nota1" id="nota1Modal">
+                <label for="nota2">Nota 2:</label>
+                <input class="typeInput" type="number" name="nota2" id="nota2Modal">
+                <label for="nota3">Nota 3:</label>
+                <input class="typeInput" type="number" name="nota3" id="nota3Modal">
+                <label for="nota4">Nota 4:</label>
+                <input class="typeInput" type="number" name="nota4" id="nota4Modal">
+                <p id="ErrorMessageNotaModal"></p>
+                <input class="but" type="submit" value="Salvar" id="salvar">   
+                <input class="typeInput" type="hidden" name="id" id="id">
+                <input class="typeInput" type="hidden" name="situacao" id="situacao">
+                
+            </form>
+            <span id="close"> &times </span>
+        </div>
+    </div>
+
+    <div class="modal" id="confirm-modal">
+        <div class="modal-content" id="confirm-modal-content">
+            <label id="message" for="message"> Deseja realmente apagar este aluno ?</label>
+            <input class="but" type="button" value="Sim" id="confirm">
+            <input class="but" type="button" value="Não" id="deny">
+        </div>
+    </div>
+
+    <div id="container-table">
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <script type="module" src="/client.js"></script>
+</body>
+
+</html>
