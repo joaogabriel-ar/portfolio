@@ -3,7 +3,7 @@ const app = express();
 const fetch = require('node-fetch');
 const nodemailer = require('nodemailer');
 const path = require('path');
-const connectToDataBase = require("./connection.js");
+const connectToDataBase = require("./public/MongoCrud/public/connection.js");
 const mongoose = require('mongoose');
 const Student = require("./public/MongoCrud/public/Student.js");
 
@@ -116,11 +116,13 @@ app.post('/form', async (req, resp) => {
         nota4: req.body.nota4,
         situacao: situacao(nota1, nota2, nota3, nota4)
     });
+
     console.log(student);
     resp.redirect('back');
 })
 
 app.get('/findStudent', async (req, resp) => {
+    console.log('entrei');
     connectToDataBase();
     const findStudent = await Student.find({});
     resp.send(findStudent);

@@ -1,3 +1,5 @@
+window.onload(getData());
+
 window.validateInput = function validateInput(ev) {
     const nome = document.getElementById("nome");
     const idade = document.getElementById("idade");
@@ -273,4 +275,3 @@ async function getData() {
 }
 
 
-getData();
