@@ -6,10 +6,10 @@ const path = require('path');
 const connectToDataBase = require("./public/MongoCrud/public/connection.js");
 const mongoose = require('mongoose');
 const Student = require("./public/MongoCrud/public/Student.js");
-const port = process.env.MONGODB_URI || process.env.PORT
+
 app.use(express.static('public'));
 app.use(express.urlencoded());
-app.listen(port, () => {
+app.listen(process.env.MONGODB_URI, () => {
     console.log('listening port 2000');
 })
 
