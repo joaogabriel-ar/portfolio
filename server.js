@@ -9,7 +9,7 @@ const Student = require("./public/MongoCrud/public/Student.js");
 
 app.use(express.static('public'));
 app.use(express.urlencoded());
-app.listen(process.env.MONGODB_URI, () => {
+app.listen(process.env.PORT, () => {
     console.log('listening port 2000');
 })
 
