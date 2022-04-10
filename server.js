@@ -28,7 +28,6 @@ app.get('/movie', async (req, res) => {
     res.send(data);
 })
 
-
 app.post('/findmovie', async (req, res) => {
     console.log('got it');
     const request = req.body;
