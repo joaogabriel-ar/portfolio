@@ -73,10 +73,6 @@ app.post('/submit', async (req, res) => {
     res.redirect('/index.html')
 })
 
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, './public', '/calculadora/calculadora.html'));
-});
-
 
 function situacao(nota1, nota2, nota3, nota4) {
 

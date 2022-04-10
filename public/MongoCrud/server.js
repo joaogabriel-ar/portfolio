@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Student = require("./public/Student.js");
 const express = require('express');
-const connectToDataBase = require("./connection.js");
+const connectToDataBase = require("./public/connection.js");
 
 const app = express();
 const port = 3000;

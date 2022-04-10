@@ -1,4 +1,4 @@
-window.onload(getData());
+
 
 window.validateInput = function validateInput(ev) {
     const nome = document.getElementById("nome");
@@ -172,8 +172,8 @@ async function getData() {
         situacao.innerHTML = data[i].situacao;
         const editIcon = document.createElement("img");
         const removeIcon = document.createElement("img");
-        editIcon.src = "/imgs/edit-icon.jpg"
-        removeIcon.src = "/imgs/remove-icon.jpg"
+        editIcon.src = "../imgs/edit-icon.jpg"
+        removeIcon.src = "../imgs/remove-icon.jpg"
         editIcon.setAttribute('id', 'editIcon');
         removeIcon.setAttribute('id', 'removeIcon');
         tr.appendChild(nome);
@@ -275,3 +275,4 @@ async function getData() {
 }
 
 
+getData();
