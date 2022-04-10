@@ -7,7 +7,7 @@ const connectToDataBase = require("./public/MongoCrud/public/connection.js");
 const mongoose = require('mongoose');
 const Student = require("./public/MongoCrud/public/Student.js");
 const uri = process.env.MONGODB_URI;
-const port = uri || process.env || 2000; 
+const port = uri
 app.use(express.static('public'));
 app.use(express.urlencoded());
 app.listen(port, () => {
