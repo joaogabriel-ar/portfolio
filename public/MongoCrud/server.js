@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Student = require("./Student.js");
+const Student = require("./public/Student.js");
 const express = require('express');
 const connectToDataBase = require("./connection.js");
 
