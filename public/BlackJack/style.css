@@ -1,4 +1,4 @@
- @import url('http://fonts.cdnfonts.com/css/casino');
+ @import url('//fonts.cdnfonts.com/css/casino');
 
                 
 * {
@@ -50,7 +50,6 @@ img {
     margin-top: 1.5em;
     margin-left: 2em;
     background: #2b941b;
-    font-family: inherit;
     padding: 1.2em 2.6em;
     font-weight: 900;
     font-size: 1em;
