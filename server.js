@@ -9,7 +9,7 @@ const Student = require("./public/MongoCrud/public/Student.js");
 
 app.use(express.static('public'));
 app.use(express.urlencoded());
-app.listen(process.env.PORT, () => {
+app.listen(2000 || process.env.PORT, () => {
     console.log('listening port 2000');
 })
 
@@ -116,7 +116,7 @@ app.post('/form', async (req, resp) => {
 })
 
 app.get('/findStudent', async (req, resp) => {
-    console.log('entrei');
+    
     connectToDataBase();
     const findStudent = await Student.find({});
     resp.send(findStudent);

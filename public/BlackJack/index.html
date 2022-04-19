@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BlackJack</title>
+</head>
+
+<body>
+    <div id="menu-container">
+        <button class="options" id="start-game">Start Game</button>
+        <button class="options" id="rules"> Rules </button>
+    </div>
+
+    <div id="modal">
+        <div id="modal-content">
+            <button id="close-modal">&times;</button>
+                    <p> Goal: beat the dealer<p>
+                    <p>The player has two options: Hit or Stand</p>
+                    <p>Hit: draws a card for the player</p>
+                    <p>Stand: wait for the dealer to draw his cards</p>
+                    <p>Who gets 21 or closers wins</p>
+
+
+        </div>
+    </div>
+
+    <div id="game-container">
+
+        <div class="dealer-player-container" id="dealer-cards-container">
+            <h2>DEALER</h2>
+            <div id="dealer-cards"></div>
+            <span id="dealer-points"></span>
+        </div>
+
+        <div class="dealer-player-container" id="player-cards-container">
+            <h2>YOU</h2>
+            <div id="player-cards"></div>
+
+            <span id="player-points"></span><br>
+
+
+        </div>
+        <button class="options" id="hit">HIT</button>
+        <button class="options" id="stand">STAND</button>
+    </div>
+    <button class="options" id="new-game" style="display: none;">New Game</button>
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
