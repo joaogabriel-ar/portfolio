@@ -29,6 +29,7 @@ img {
 .menu-button {
     margin: 15% 1.5em;
     padding: 1.5em;
+    cursor: pointer;
 }
 
 #game-container {
@@ -56,6 +57,7 @@ img {
     border: 3px solid black;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
+    cursor: pointer;
 }
 
 .options:hover {
@@ -101,6 +103,7 @@ img {
     float: right;
     padding-right: 0.1em;
     padding-left: 0.1em;
+    cursor: pointer;
 }
 p{
     padding: 0.2em;
